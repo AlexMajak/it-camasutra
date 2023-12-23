@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+</head>
+
+<body>
+
+    <input value="Alexandr" class="first-name default-input" type="text" id="first-name">
+    <hr>
+    <input type="text" value="Kiyassov" class="lastnameClass" id="lastname">
+    <hr>
+    <input type="text" value="Kazan" class="adressClass" id="adress">
+
+    <select name="city" id="select-city" type="text" id="select-city" multiple="multiple" class="select-city">
+        <option value="Kiev1">Kiev</option>
+        <option value="Minsk1" selected="selected">Minsk</option>
+        <option value="Moscau1">Moscau</option>
+    </select>
+
+    <textarea name="text" id="textarea" cols="30" rows="10" class="textareaClass">Мне нравиться кататься на коньках
+        Кататься на велосипеде
+        Я люблю программировать
+        Мне нравиться рыбалка
+    </textarea>
+
+    <div class="divImg" id="divId"><img src="https://vsekidki.ru/uploads/posts/2016-08/1470735121_lecdaa3axdc.jpg"
+            alt="avatar" id="imgId" class="imgClass" width="150px"></div>
+
+    <script>
+        var firstNameId = "first-name";
+        var firstNameEl = document.getElementById(firstNameId);
+        var lastNameId = "lastname";
+        var lastNameEl = document.getElementById(lastNameId);
+        var adressId = "adress";
+        var adressEl = document.getElementById(adressId)
+        var selectId = "select-city";
+        var selectEl = document.getElementById(selectId);
+        var textareaId = "textarea";
+        var textareaEl = document.getElementById(textareaId);
+        var divId = "divId";
+        var divEl = document.getElementById(divId);
+        var imgId = "imgId";
+        var imgEl = document.getElementById(imgId);
+
+        // window.alert(firstNameEl.value);
+        // window.alert(firstNameEl.className);
+        // window.alert(lastNameEl.value);
+        // window.alert(lastNameEl.className);
+        // window.alert(adressEl.value);
+        // window.alert(adressEl.className);
+        // window.alert(selectEl.value);
+        // window.alert(selectEl.className);
+        //window.alert(selectEl.innerHTML);
+        // window.alert(textareaEl.value);
+        // window.alert(textareaEl.className);
+        //window.alert(textareaEl.innerHTML);
+        // window.alert(divEl.value);
+        // window.alert(divEl.className);
+        // window.alert(divEl.innerHTML);
+        // window.alert(imgEl.value);
+        // window.alert(imgEl.className);
+        window.alert(imgEl.src);
+        window.alert(imgEl.alt);
+
+    </script>
+
+</body>
+
+</html>

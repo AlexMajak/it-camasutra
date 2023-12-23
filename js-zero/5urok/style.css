@@ -1,0 +1,29 @@
+
+.important-item {
+    color: rgb(143, 136, 247);
+    font-size: 20px;
+    border: rgb(154, 216, 125) 2px solid;
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.inputStyle {
+    color: bisque;
+    font-size: 25px;
+    border: rgb(143, 136, 247) 2px solid transparent;
+    margin-left: 15px;
+    padding: 5px;
+}
+
+.importantSize {
+    font-size: 40px;
+}
+
+img {
+    width: 100px;
+}
+
+input{
+    padding: 20px;
+}

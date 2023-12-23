@@ -1,0 +1,40 @@
+.news-content .section-hot h2 {
+    background-color: rgb(9, 138, 95);
+    color: white;
+    padding: 10px;
+}
+
+.news-content .section-realty h2 {
+    background-color: rgb(93, 143, 184);
+    color: white;
+    padding: 10px;
+}
+
+.news-content .section-news li {
+    padding: 10px;
+}
+
+.news-content .section-hot li:hover {
+    background-color: rgb(9, 138, 95);
+    color: white;
+}
+
+.news-content .section-realty li:hover {
+    background-color: rgb(93, 143, 184);
+    color: white;
+    font-weight: bold;
+}
+
+.news-content .section-news li:hover a {
+    color: white;
+}
+
+.news-content .section-hot .hot-footer {
+    color: rgb(9, 138, 95);
+    font-weight: bold;
+}
+
+.news-content .section-realty .realty-footer {
+    color: rgb(93, 143, 184);
+    font-weight: bold;
+}
