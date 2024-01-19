@@ -25,21 +25,23 @@ let userAnswer0;
 let userAnswer1;
 let userAnswer2;
 let userCorrectPercent;
+// const userInput = window.prompt('write something');
+const BR = '<br>';
 
 userAnswer0 = prompt(word0);
-alert(userAnswer0 === word0Translate);
+document.write(userAnswer0 === word0Translate, BR);
 if (userAnswer0 === word0Translate) {
 	correctAnswersCount++;
 }
 
 userAnswer1 = prompt(word1);
-alert(userAnswer1 === word1Translate);
+document.write(userAnswer1 === word1Translate, BR);
 if (userAnswer1 === word1Translate) {
 	correctAnswersCount++;
 }
 
 userAnswer2 = prompt(word2);
-alert(userAnswer2 === word2Translate);
+document.write(userAnswer2 === word2Translate, BR);
 if (userAnswer2 === word2Translate) {
 	correctAnswersCount++;
 }
