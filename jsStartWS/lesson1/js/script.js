@@ -69,10 +69,10 @@
 
 // document.write('<br>', 'END');
 
-let balance = +window.prompt('Input your balance', 110);
-const productPrice = window.Number(window.prompt('Input product price', 110));
+// let balance = +window.prompt('Input your balance', 110);
+// const productPrice = window.Number(window.prompt('Input product price', 110));
 
-document.write('Start', '<br>');
+// document.write('Start', '<br>');
 
 // if (balance >= productPrice) {
 // if (productPrice <= balance) {
@@ -92,16 +92,48 @@ document.write('Start', '<br>');
 // }
 
 
-if (!(Number.isNaN(balance) || Number.isNaN(productPrice))) {
-	if (balance < productPrice) {
-		document.write('You dont have enougth money');
-	} else {
-		document.write('You can buy this product');
-	}
-} else {
+// if (!(Number.isNaN(balance) || Number.isNaN(productPrice))) {
+// 	if (balance < productPrice) {
+// 		document.write('You dont have enougth money');
+// 	} else {
+// 		document.write('You can buy this product');
+// 	}
+// } else {
+// 	document.write('Input a number');
+// }
+
+// document.write('<br>', 'END');
+
+
+let balance = window.Number(window.prompt('Input your balance', 200));
+const productPriceOne = window.Number(window.prompt('Input product price product one', 50));
+const productPriceTwo = window.Number(window.prompt('Input product price product two', 60));
+const productPriceThree = window.Number(window.prompt('Input product price product three', 70));
+
+document.write('Start', '<br>');
+if (Number.isNaN(balance) || Number.isNaN(productPriceOne) || Number.isNaN(productPriceTwo) || Number.isNaN(productPriceThree)) {
 	document.write('Input a number');
+} else {
+	if (balance >= productPriceOne) {
+		document.write('You buy product One', '<br>');
+		document.write('Your balance ' + (balance - productPriceOne), '<br>');
+	} else {
+		document.write('You dont have enougth money', '<br>');
+	}
+	balance = balance - productPriceOne;
+	if (balance >= productPriceTwo) {
+		document.write('You buy product Two', '<br>');
+		document.write('Your balance ' + (balance - productPriceTwo), '<br>');
+	} else {
+		document.write('You dont have enougth money from product Two', '<br>');
+	}
+	balance = balance - productPriceTwo;
+	if (balance >= productPriceThree) {
+		document.write('You buyproduct Three', '<br>');
+		document.write('Your balance ' + (balance - productPriceThree), '<br>');
+	} else {
+		document.write('You dont have enougth money from product Three');
+	}
+
 }
-
 document.write('<br>', 'END');
-
-
